@@ -61,4 +61,14 @@
     <string name="settings_description_with_value">%1$s — %2$s</string>
     <string name="skill_weather_description_temperature">%1$s · %2$.1f%3$s</string>
     <string name="skill_open_unknown_app">Asnas arussin %1$s</string>
+    <string name="back">Uɣal</string>
+    <string name="pref_weather_length_unit_metric">Amitran</string>
+    <string name="pref_weather_length_unit_imperial">Imperyal</string>
+    <string name="vosk_model_notification_title">Tamudemt Vosk</string>
+    <string name="pref_search_engine">Amsedday n unadi</string>
+    <string name="skill_translation_success">Yettwasuqel ɣer %1$s</string>
+    <string name="pref_language_system">Seqdec tutlayt n unagraw</string>
+    <string name="skill_navigation_navigating_to">Tunigin ɣer %1$s</string>
+    <string name="wake_word_setup_title">Swel awal n usermed</string>
+    <string name="wake_service_label">Tanfa n wawal n usermed n Dicio</string>
 </resources>
