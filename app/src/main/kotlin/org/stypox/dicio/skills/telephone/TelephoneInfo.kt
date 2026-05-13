@@ -33,7 +33,7 @@ object TelephoneInfo : SkillInfo("telephone") {
 
     override fun build(ctx: SkillContext): Skill<*>? {
         val data = Sentences.Telephone[ctx.sentencesLanguage] ?: return null
-        Sentences.UtilYesNo[ctx.sentencesLanguage] ?: return null
-        return TelephoneSkill(TelephoneInfo, data)
+        val yesNoData = Sentences.UtilYesNo[ctx.sentencesLanguage] ?: return null
+        return TelephoneSkill(TelephoneInfo, data, yesNoData)
     }
 }

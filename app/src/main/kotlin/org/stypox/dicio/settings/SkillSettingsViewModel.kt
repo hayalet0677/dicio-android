@@ -25,8 +25,6 @@ class SkillSettingsViewModel @Inject constructor(
 
     val skills: List<SkillInfo> get() = skillHandler.allSkillInfoList
 
-    val enabledSkillsInfo = skillHandler.enabledSkillsInfo
-
     // run blocking because the settings screen cannot start if settings have not been loaded yet
     val enabledSkills = dataStore.data
         .map { it.enabledSkillsMap }

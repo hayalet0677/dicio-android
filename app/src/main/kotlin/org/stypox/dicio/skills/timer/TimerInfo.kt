@@ -26,8 +26,8 @@ object TimerInfo : SkillInfo("timer") {
 
     override fun build(ctx: SkillContext): Skill<*>? {
         val data = Sentences.Timer[ctx.sentencesLanguage] ?: return null
-        Sentences.UtilYesNo[ctx.sentencesLanguage] ?: return null
+        val yesNoData = Sentences.UtilYesNo[ctx.sentencesLanguage] ?: return null
         if (ctx.parserFormatter == null) return null
-        return TimerSkill(TimerInfo, data)
+        return TimerSkill(TimerInfo, data, yesNoData)
     }
 }

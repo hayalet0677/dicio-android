@@ -21,6 +21,7 @@ import org.stypox.dicio.skills.navigation.NavigationOutput
 import org.stypox.dicio.skills.telephone.ConfirmCallOutput
 import org.stypox.dicio.skills.telephone.ConfirmedCallOutput
 import org.stypox.dicio.skills.telephone.TelephoneInfo
+import org.stypox.dicio.sentences.Sentences
 import org.stypox.dicio.skills.timer.TimerInfo
 import org.stypox.dicio.skills.timer.TimerOutput
 import org.stypox.dicio.skills.weather.WeatherInfo
@@ -105,7 +106,7 @@ class InteractionLogPreviews : CollectionPreviewParameterProvider<InteractionLog
             Interaction(
                 skill = TelephoneInfo,
                 questionsAnswers = listOf(
-                    QuestionAnswer("call mom", ConfirmCallOutput("Mom", "1234567890")),
+                    QuestionAnswer("call mom", ConfirmCallOutput("Mom", "1234567890", Sentences.UtilYesNo["en"]!!)),
                     QuestionAnswer("yes", ConfirmedCallOutput("1234567890")),
                 )
             )
