@@ -7,6 +7,7 @@ import org.dicio.skill.skill.SkillInfo
 import org.dicio.skill.skill.SkillOutput
 import org.dicio.skill.standard.StandardRecognizerData
 import org.dicio.skill.standard.StandardRecognizerSkill
+import org.dicio.skill.standard.util.MatchHelper
 import org.stypox.dicio.sentences.Sentences.Calculator
 import org.stypox.dicio.sentences.Sentences.CalculatorOperators
 import java.text.DecimalFormat
@@ -20,7 +21,8 @@ class CalculatorSkill(correspondingSkillInfo: SkillInfo, data: StandardRecognize
         operatorSection: StandardRecognizerData<CalculatorOperators>,
         text: String
     ): CalculatorOperators? {
-        val (score, result) = operatorSection.score(ctx, text)
+        val helper = MatchHelper(ctx.parserFormatter, text)
+        val (score, result) = operatorSection.score(helper, text)
         return if (score.scoreIn01Range() < 0.3) {
             null
         } else {
