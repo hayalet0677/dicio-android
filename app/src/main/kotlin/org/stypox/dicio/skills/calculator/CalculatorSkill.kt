@@ -13,8 +13,11 @@ import org.stypox.dicio.sentences.Sentences.CalculatorOperators
 import java.text.DecimalFormat
 import java.text.DecimalFormatSymbols
 
-class CalculatorSkill(correspondingSkillInfo: SkillInfo, data: StandardRecognizerData<Calculator>)
-    : StandardRecognizerSkill<Calculator>(correspondingSkillInfo, data) {
+class CalculatorSkill(
+    correspondingSkillInfo: SkillInfo,
+    data: StandardRecognizerData<Calculator>,
+    private val operatorRecognizerData: StandardRecognizerData<CalculatorOperators>,
+) : StandardRecognizerSkill<Calculator>(correspondingSkillInfo, data) {
 
     private fun getOperation(
         ctx: SkillContext,
@@ -47,7 +50,6 @@ class CalculatorSkill(correspondingSkillInfo: SkillInfo, data: StandardRecognize
             return CalculatorOutput(null, "", "")
         }
 
-        val operatorRecognizerData = CalculatorOperators[ctx.sentencesLanguage]!!
         var firstNumber: Number
         var i: Int
         if (textWithNumbers[0] is Number) {
