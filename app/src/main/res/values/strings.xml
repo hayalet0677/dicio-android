@@ -57,7 +57,7 @@
     <string name="vosk_model_downloading">Vosk modeli indiriliyor…</string>
     <string name="vosk_model_extracting">Vosk modeli çıkartılıyor…</string>
     <string name="vosk_model_download_error">Vosk modeli indirme başarısız</string>
-    <string name="vosk_model_extraction_error">Vosk modeli Zip'ten çıkartma başarısız</string>
+    <string name="vosk_model_extraction_error">Vosk modeli Zip dosyasından çıkartma başarısız</string>
     <string name="vosk_model_ready">Vosk modeli hazır</string>
     
     <!-- METİN OKUMA -->
@@ -222,7 +222,7 @@
     
     <!-- HAVA DURUMU -->
     <string name="skill_weather_could_not_find_city">%1$s şehrini bulamadım</string>
-    <string name="skill_weather_in_city_there_is_description">%1$s\'da şu anda %2$s ve %3$s derece var</string>
+    <string name="skill_weather_in_city_there_is_description">%1$s\'de şu anda %2$s ve %3$s derece var</string>
     <string name="skill_weather_description_temperature">%1$s · %2$.1f%3$s</string>
     <string name="skill_weather_min_max_wind">Minimum sıcaklık: %1$.1f%4$s\nMaksimum sıcaklık: %2$.1f%4$s\nRüzgar hızı: %3$.1f%5$s</string>
     
