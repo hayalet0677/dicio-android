@@ -138,6 +138,7 @@
     
     <!-- ARAMA MOTORU -->
     <string name="pref_search_engine">Arama motoru</string>
+    <string name="pref_search_engine_duckduckgo" translatable="false">DuckDuckGo</string>
     <string name="pref_weather_default_city">Varsayılan şehir</string>
     <string name="pref_weather_default_city_using_ip_info">Açıkça bir şehir söylemediğinde hava durumu için kullanılacak şehri ayarla. Mevcut davranış, konumu IP bilgisinden almaktır.</string>
     
@@ -363,10 +364,14 @@
     <string name="about_description">Çok dilli, yerel ve özgür sesli asistan</string>
     <string name="about_repository_title">Kaynak kodu deposu</string>
     <string name="about_repository_description">Maku ücretsiz ve açık kaynaktır, GPLv3 altında lisanslanmıştır</string>
+    <string name="about_repository_link" translatable="false">https://github.com/Stypox/dicio-android</string>
     <string name="about_issues_title">Hata mı buldun?</string>
     <string name="about_issues_description">Yeni özellikler talep etmek veya bozuk şeyleri raporlamakta özgürsün (günlükleri eklemeyi unutma)</string>
+    <string name="about_issues_link" translatable="false">https://github.com/Stypox/dicio-android/issues</string>
     <string name="about_contributing_title">Katkıda bulunma</string>
     <string name="about_contributing_description">Maku, dünya çapındaki gönüllüler tarafından geliştirilmektedir. Kod iyileştirmeleri, çeviriler ve hatta yeni becerilerle katkıda bulunarak sen de yardımcı olabilirsin!</string>
+    <string name="about_contributing_link" translatable="false">https://github.com/Stypox/dicio-android#contributing</string>
     <string name="about_privacy_title">Gizlilik politikası</string>
     <string name="about_privacy_description">Maku, harici hizmetlere yalnızca bir becerinin bunu yapması beklediğinde veya kurulum sırasında makine öğrenimi modellerini indirmek için bağlanır. Tüm konuşma işleme cihaz üzerinde yerel olarak gerçekleştirilir ve çoğu beceri çevrimdışı kullanılabilir.</string>
+    <string name="about_privacy_link" translatable="false">https://stypox.org/dicio-privacy-policy.html</string>
 </resources>
