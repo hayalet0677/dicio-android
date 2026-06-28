@@ -1,281 +1,372 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="app_name" translatable="false">Dicio</string>
-    <string name="drawer_open">Open navigation drawer</string>
-    <string name="drawer_close">Close navigation drawer</string>
-    <string name="drawer_header_subtitle">May I help you?</string>
-    <string name="back">Back</string>
-    <string name="clear">Clear</string>
-    <string name="share">Share</string>
-    <string name="open_with">Open with</string>
-    <string name="no_app_to_open_intent">No app on your device can open this</string>
-    <string name="copy_to_clipboard">Copy to clipboard</string>
-    <string name="copied_to_clipboard">Copied to clipboard</string>
-    <string name="done">Done</string>
-    <string name="permission_denied">Permission denied</string>
-    <string name="text_input_hint">Ask me anything…</string>
-    <string name="grant_microphone_permission">Grant microphone permission</string>
-    <string name="error_loading">Error loading</string>
-    <string name="error_unzipping">Error unzipping</string>
-    <string name="error_downloading">Error downloading</string>
-    <string name="unzipping">Unzipping…</string>
-    <string name="download">Download</string>
-    <string name="stt_not_available">Speech to Text not available</string>
-    <string name="stt_download">Download Speech to Text</string>
-    <string name="stt_unzip">Unzip Speech to Text</string>
-    <string name="listening">Listening…</string>
-    <string name="waiting">Waiting…</string>
-    <string name="start_listening">Start listening</string>
-    <string name="downloaded">Downloaded</string>
-    <string name="loaded">Loaded</string>
-    <string name="here_is_what_i_can_do">Here is what I can do!</string>
-    <string name="all_skills_disabled_title">All skills are disabled</string>
-    <string name="all_skills_disabled_description">Please enable some skills from settings, otherwise Dicio will not be able to do anything</string>
-    <string name="action_text_input">Text input</string>
-    <string name="action_voice_input">Voice input</string>
-    <string name="microphone_error">Unable to access microphone, it is probably already in use or the relevant permission was denied.</string>
-    <string name="vosk_model_notification_title">Vosk model</string>
-    <string name="vosk_model_notification_description">Language: %1$s</string>
-    <string name="vosk_model_unsupported_language">No Vosk model available for the current language</string>
-    <string name="vosk_model_downloading">Downloading Vosk model…</string>
-    <string name="vosk_model_extracting">Extracting Vosk model…</string>
-    <string name="vosk_model_download_error">Downloading Vosk model failed</string>
-    <string name="vosk_model_extraction_error">Extracting Vosk model from Zip failed</string>
-    <string name="vosk_model_ready">Vosk model ready</string>
-    <string name="android_tts_unsupported_language">The current language is not supported by the Android text to speech engine</string>
-    <string name="android_tts_error">An error occurred while initializing the Android text to speech engine</string>
-    <string name="settings">Settings</string>
-    <string name="error_report">Report</string>
-    <string name="error_title">Error report</string>
-    <string name="error_sorry">Sorry, an error occurred</string>
-    <string name="error_details_headline">Details:</string>
-    <string name="error_details_labels">Action:\nLocale:\nGMT Time:\nPackage:\nVersion:\nOS version:</string>
-    <string name="error_crash_log_headline">Crash log:</string>
-    <string name="error_github_notice">Please check whether an issue discussing your crash already exists. When creating duplicate tickets, you take time from us which we could spend with fixing the actual bug.</string>
-    <string name="error_copy_formatted">Copy formatted report</string>
-    <string name="error_report_github">Report on GitHub</string>
-    <string name="error_report_notification_title">Dicio encountered an error, tap to report</string>
-    <string name="error_report_notification_toast">An error occurred, see the notification</string>
-    <string name="error_report_channel_name">Error report notification</string>
-    <string name="error_report_channel_description">Notifications to report errors</string>
-    <!-- settings_header -->
-    <string name="pref_io">Input and output methods</string>
-    <string name="pref_general">General</string>
-    <string name="pref_appearance">Appearance</string>
-    <string name="pref_skills_title">Skills</string>
-    <string name="pref_skills_summary">Enable/disable skills and tune their behavior</string>
-    <string name="expand">Expand</string>
-    <string name="reduce">Reduce</string>
-    <string name="pref_theme">Theme</string>
-    <string name="pref_theme_summary">Choose the app color set</string>
-    <string name="pref_theme_system">Use system theme</string>
-    <string name="pref_theme_system_dark_black">Use system theme (use Black variant for dark theme)</string>
-    <string name="pref_theme_light">Light</string>
-    <string name="pref_theme_dark">Dark</string>
-    <string name="pref_theme_black">Black</string>
-    <string name="pref_language">Language</string>
-    <string name="pref_language_summary">What language should Dicio use to listen to you and provide answers?</string>
-    <string name="pref_language_system">Use system language</string>
-    <string name="pref_input_method">Input method</string>
-    <string name="pref_input_method_summary">Choose the service to use to talk to Dicio</string>
-    <string name="pref_input_method_text">Only text box</string>
-    <string name="pref_input_method_vosk">Vosk offline speech recognition</string>
-    <string name="pref_input_method_vosk_summary">Downloads and runs a Vosk SpeechToText model offline inside Dicio</string>
-    <string name="pref_input_method_external_popup">External SpeechToText popup</string>
-    <string name="pref_input_method_external_popup_summary">Opens the UI of another app through ACTION\u200B_\u200BRECOGNIZE\u200B_\u200BSPEECH, for example whisperIME, Kõnele, Futo Voice Input</string>
-    <string name="pref_speech_output_method">Speech output method</string>
-    <string name="pref_speech_output_method_summary">Choose the service Dicio should use to talk to you</string>
-    <string name="pref_speech_output_method_android">Android text to speech engine</string>
-    <string name="pref_speech_output_method_toast">Toast (popup message)</string>
-    <string name="pref_speech_output_method_snackbar">Snackbar (message at the bottom)</string>
-    <string name="pref_speech_output_method_nothing">Nothing</string>
-    <string name="pref_wake_method">Wake word recognition method</string>
-    <string name="pref_wake_method_summary">Choose the service to use to listen for the \"Hey Dicio\" wakeup word in the background</string>
-    <string name="pref_wake_method_disabled">Disabled</string>
-    <string name="pref_wake_method_openwakeword">OpenWakeWord offline audio processing</string>
-    <string name="pref_wake_custom_delete">Delete custom wake word</string>
-    <string name="pref_wake_custom_delete_summary">Return to default \"Hey Dicio\" wake word</string>
-    <string name="pref_wake_custom_import">Import custom wake word</string>
-    <string name="pref_wake_custom_import_summary_oww">Replace the default \"Hey Dicio\" wake word with a custom TFLite model; you can download some custom models from github.com/dscripka/openWakeWord/releases</string>
-    <string name="pref_skill_not_available">This skill is not yet available for your language. Contributions are welcome!</string>
-    <string name="pref_skill_missing_permissions">Requires these permissions: %1$s</string>
-    <string name="pref_skill_grant_permissions">Grant</string>
-    <string name="pref_skill_number_library_not_available">The number parsing and formatting library <i>dicio-numbers</i> is not yet translated in your language, which means all of the skills related to numbers, durations and dates are not available. <b>Please contribute</b> if you can by tapping here!</string>
-    <string name="pref_search_engine">Search engine</string>
-    <string name="pref_search_engine_duckduckgo" translatable="false">DuckDuckGo</string>
-    <string name="pref_weather_default_city">Default city</string>
-    <string name="pref_weather_default_city_using_ip_info">Set the city to use for weather when you do not explicitly say one. The current behaviour is to get the location from IP info.</string>
-    <string name="pref_stt_silence_duration_title">Maximum silence before start of speech</string>
-    <string name="pref_stt_silence_duration_description">Give up listening after %1$d silent intervals</string>
-    <string name="pref_stt_auto_finish_title">Directly send result of speech to text popup</string>
-    <string name="pref_stt_auto_finish_summary_on">Automatically send speech result to requesting app when listening finishes</string>
-    <string name="pref_stt_auto_finish_summary_off">Wait for manual confirmation before sending speech result to requesting app</string>
-    <string name="pref_dynamic_colors_title">Dynamic colors</string>
-    <string name="pref_dynamic_colors_summary">Use the Material You dynamic colors provided by the system</string>
-    <string name="pref_stt_play_sound_title">Play sound when starting to listen</string>
-    <string name="pref_stt_play_sound_summary">Choose whether to play a sound when your voice starts being recognized, and select the audio channel to play the sound on</string>
-    <string name="pref_stt_play_sound_notification">Notification channel</string>
-    <string name="pref_stt_play_sound_alarm">Alarm channel</string>
-    <string name="pref_stt_play_sound_media">Default/media channel</string>
-    <string name="pref_stt_play_sound_none">Do not play sound</string>
-    <string name="perm_read_contacts">read your contacts</string>
-    <string name="perm_call_phone">directly call phone numbers</string>
+    <!-- UYGULAMA ADI -->
+    <string name="app_name" translatable="false">Maku</string>
+    
+    <!-- NAVİGASYON -->
+    <string name="drawer_open">Menüyü aç</string>
+    <string name="drawer_close">Menüyü kapat</string>
+    <string name="drawer_header_subtitle">Emredersin patron!</string>
+    
+    <!-- GENEL BUTONLAR -->
+    <string name="back">Geri</string>
+    <string name="clear">Temizle</string>
+    <string name="share">Paylaş</string>
+    <string name="open_with">Şununla aç</string>
+    <string name="no_app_to_open_intent">Telefonunda bunu açabilecek bir uygulama yok</string>
+    <string name="copy_to_clipboard">Panoya kopyala</string>
+    <string name="copied_to_clipboard">Panoya kopyalandı</string>
+    <string name="done">Tamam</string>
+    <string name="permission_denied">İzin reddedildi</string>
+    
+    <!-- GİRDİ ALANLARI -->
+    <string name="text_input_hint">Bana bir şey sor patron…</string>
+    <string name="grant_microphone_permission">Mikrofon izni ver</string>
+    
+    <!-- HATA MESAJLARI -->
+    <string name="error_loading">Yüklenirken hata oluştu</string>
+    <string name="error_unzipping">Çıkartma hatası</string>
+    <string name="error_downloading">İndirme hatası</string>
+    <string name="unzipping">Çıkartılıyor…</string>
+    <string name="download">İndir</string>
+    
+    <!-- SES TANIMA -->
+    <string name="stt_not_available">Konuşma tanıma kullanılamıyor</string>
+    <string name="stt_download">Konuşma tanıma modelini indir</string>
+    <string name="stt_unzip">Konuşma tanıma modelini çıkart</string>
+    <string name="listening">Seni dinliyorum patron…</string>
+    <string name="waiting">Bekliyorum…</string>
+    <string name="start_listening">Dinlemeye başla</string>
+    <string name="downloaded">İndirildi</string>
+    <string name="loaded">Yüklendi</string>
+    <string name="here_is_what_i_can_do">İşte yapabileceklerim patron!</string>
+    
+    <!-- BECERİLER -->
+    <string name="all_skills_disabled_title">Tüm beceriler devre dışı</string>
+    <string name="all_skills_disabled_description">Lütfen ayarlardan bazı becerileri etkinleştir, yoksa Maku hiçbir şey yapamaz</string>
+    
+    <!-- GİRDİ YÖNTEMLERİ -->
+    <string name="action_text_input">Metin girişi</string>
+    <string name="action_voice_input">Sesli giriş</string>
+    <string name="microphone_error">Mikrofona erişilemiyor, muhtemelen zaten kullanımda veya ilgili izin reddedildi.</string>
+    
+    <!-- VOSK MODELİ -->
+    <string name="vosk_model_notification_title">Vosk modeli</string>
+    <string name="vosk_model_notification_description">Dil: %1$s</string>
+    <string name="vosk_model_unsupported_language">Mevcut dil için Vosk modeli yok</string>
+    <string name="vosk_model_downloading">Vosk modeli indiriliyor…</string>
+    <string name="vosk_model_extracting">Vosk modeli çıkartılıyor…</string>
+    <string name="vosk_model_download_error">Vosk modeli indirme başarısız</string>
+    <string name="vosk_model_extraction_error">Vosk modeli Zip'ten çıkartma başarısız</string>
+    <string name="vosk_model_ready">Vosk modeli hazır</string>
+    
+    <!-- METİN OKUMA -->
+    <string name="android_tts_unsupported_language">Mevcut dil, Android metin okuma motoru tarafından desteklenmiyor</string>
+    <string name="android_tts_error">Android metin okuma motoru başlatılırken hata oluştu</string>
+    
+    <!-- AYARLAR -->
+    <string name="settings">Ayarlar</string>
+    <string name="error_report">Rapor</string>
+    <string name="error_title">Hata raporu</string>
+    <string name="error_sorry">Üzgünüm patron, bir hata oluştu</string>
+    <string name="error_details_headline">Detaylar:</string>
+    <string name="error_details_labels">Eylem:\nYerel:\nGMT Zamanı:\nPaket:\nSürüm:\nİşletim sistemi sürümü:</string>
+    <string name="error_crash_log_headline">Çökme günlüğü:</string>
+    <string name="error_github_notice">Lütfen çökmenizi tartışan bir sorun olup olmadığını kontrol edin. Yinelenen biletler oluşturarak, asıl hatayı düzeltmek için harcayabileceğimiz zamanı alırsınız.</string>
+    <string name="error_copy_formatted">Biçimlendirilmiş raporu kopyala</string>
+    <string name="error_report_github">GitHub\'da raporla</string>
+    <string name="error_report_notification_title">Maku bir hatayla karşılaştı, raporlamak için dokun</string>
+    <string name="error_report_notification_toast">Bir hata oluştu, bildirime bak</string>
+    <string name="error_report_channel_name">Hata raporu bildirimi</string>
+    <string name="error_report_channel_description">Hataları raporlamak için bildirimler</string>
+    
+    <!-- AYARLAR BAŞLIKLARI -->
+    <string name="pref_io">Giriş ve çıkış yöntemleri</string>
+    <string name="pref_general">Genel</string>
+    <string name="pref_appearance">Görünüm</string>
+    <string name="pref_skills_title">Beceriler</string>
+    <string name="pref_skills_summary">Becerileri etkinleştir/devre dışı bırak ve davranışlarını ayarla</string>
+    <string name="expand">Genişlet</string>
+    <string name="reduce">Daralt</string>
+    
+    <!-- TEMA -->
+    <string name="pref_theme">Tema</string>
+    <string name="pref_theme_summary">Uygulama renk setini seç</string>
+    <string name="pref_theme_system">Sistem temasını kullan</string>
+    <string name="pref_theme_system_dark_black">Sistem temasını kullan (koyu tema için Siyah varyantı kullan)</string>
+    <string name="pref_theme_light">Açık</string>
+    <string name="pref_theme_dark">Koyu</string>
+    <string name="pref_theme_black">Siyah</string>
+    
+    <!-- DİL -->
+    <string name="pref_language">Dil</string>
+    <string name="pref_language_summary">Maku seni dinlerken ve cevap verirken hangi dili kullanmalı?</string>
+    <string name="pref_language_system">Sistem dilini kullan</string>
+    
+    <!-- GİRDİ YÖNTEMİ -->
+    <string name="pref_input_method">Giriş yöntemi</string>
+    <string name="pref_input_method_summary">Maku ile konuşmak için kullanılacak hizmeti seç</string>
+    <string name="pref_input_method_text">Sadece metin kutusu</string>
+    <string name="pref_input_method_vosk">Vosk çevrimdışı konuşma tanıma</string>
+    <string name="pref_input_method_vosk_summary">Maku içinde çevrimdışı bir Vosk KonuşmaMetne modeli indirir ve çalıştırır</string>
+    <string name="pref_input_method_external_popup">Harici KonuşmaMetne açılır penceresi</string>
+    <string name="pref_input_method_external_popup_summary">ACTION_RECOGNIZE_SPEECH üzerinden başka bir uygulamanın kullanıcı arayüzünü açar, örneğin whisperIME, Kõnele, Futo Voice Input</string>
+    
+    <!-- SES ÇIKIŞI -->
+    <string name="pref_speech_output_method">Sesli çıkış yöntemi</string>
+    <string name="pref_speech_output_method_summary">Maku\'nun seninle konuşmak için kullanması gereken hizmeti seç</string>
+    <string name="pref_speech_output_method_android">Android metin okuma motoru</string>
+    <string name="pref_speech_output_method_toast">Toast (açılır mesaj)</string>
+    <string name="pref_speech_output_method_snackbar">Snackbar (alttaki mesaj)</string>
+    <string name="pref_speech_output_method_nothing">Hiçbir şey</string>
+    
+    <!-- UYANMA KELİMESİ -->
+    <string name="pref_wake_method">Uyanma kelimesi tanıma yöntemi</string>
+    <string name="pref_wake_method_summary">Arka planda \"Maku\" uyanma kelimesini dinlemek için kullanılacak hizmeti seç</string>
+    <string name="pref_wake_method_disabled">Devre dışı</string>
+    <string name="pref_wake_method_openwakeword">OpenWakeWord çevrimdışı ses işleme</string>
+    <string name="pref_wake_custom_delete">Özel uyanma kelimesini sil</string>
+    <string name="pref_wake_custom_delete_summary">Varsayılan \"Maku\" uyanma kelimesine dön</string>
+    <string name="pref_wake_custom_import">Özel uyanma kelimesini içe aktar</string>
+    <string name="pref_wake_custom_import_summary_oww">Varsayılan \"Maku\" uyanma kelimesini özel bir TFLite modeliyle değiştir; github.com/dscripka/openWakeWord/releases adresinden bazı özel modeller indirebilirsin</string>
+    
+    <!-- BECERİ HATALARI -->
+    <string name="pref_skill_not_available">Bu beceri henüz senin dilinde mevcut değil. Katkılar memnuniyetle karşılanır!</string>
+    <string name="pref_skill_missing_permissions">Şu izinleri gerektirir: %1$s</string>
+    <string name="pref_skill_grant_permissions">İzin ver</string>
+    <string name="pref_skill_number_library_not_available">Sayı ayrıştırma ve biçimlendirme kütüphanesi <i>dicio-numbers</i> henüz senin diline çevrilmedi, bu da sayılar, süreler ve tarihlerle ilgili tüm becerilerin kullanılamadığı anlamına gelir. Yapabiliyorsan buraya dokunarak <b>lütfen katkıda bulun</b>!</string>
+    
+    <!-- ARAMA MOTORU -->
+    <string name="pref_search_engine">Arama motoru</string>
+    <string name="pref_weather_default_city">Varsayılan şehir</string>
+    <string name="pref_weather_default_city_using_ip_info">Açıkça bir şehir söylemediğinde hava durumu için kullanılacak şehri ayarla. Mevcut davranış, konumu IP bilgisinden almaktır.</string>
+    
+    <!-- SES TANIMA AYARLARI -->
+    <string name="pref_stt_silence_duration_title">Konuşma başlangıcından önce maksimum sessizlik</string>
+    <string name="pref_stt_silence_duration_description">%1$d sessiz aralıktan sonra dinlemeyi bırak</string>
+    <string name="pref_stt_auto_finish_title">Konuşma metne açılır penceresinin sonucunu doğrudan gönder</string>
+    <string name="pref_stt_auto_finish_summary_on">Dinleme bittiğinde konuşma sonucunu otomatik olarak isteyen uygulamaya gönder</string>
+    <string name="pref_stt_auto_finish_summary_off">Konuşma sonucunu isteyen uygulamaya göndermeden önce manuel onay bekle</string>
+    
+    <!-- DİNAMİK RENKLER -->
+    <string name="pref_dynamic_colors_title">Dinamik renkler</string>
+    <string name="pref_dynamic_colors_summary">Sistem tarafından sağlanan Material You dinamik renklerini kullan</string>
+    
+    <!-- SES AYARLARI -->
+    <string name="pref_stt_play_sound_title">Dinlemeye başlarken ses çal</string>
+    <string name="pref_stt_play_sound_summary">Sesin tanınmaya başlandığında bir ses çalınıp çalınmayacağını seç ve sesin çalınacağı ses kanalını seç</string>
+    <string name="pref_stt_play_sound_notification">Bildirim kanalı</string>
+    <string name="pref_stt_play_sound_alarm">Alarm kanalı</string>
+    <string name="pref_stt_play_sound_media">Varsayılan/medya kanalı</string>
+    <string name="pref_stt_play_sound_none">Ses çalma</string>
+    
+    <!-- İZİNLER -->
+    <string name="perm_read_contacts">kişilerini oku</string>
+    <string name="perm_call_phone">doğrudan telefon numaralarını ara</string>
     <string name="settings_description_with_value">%1$s — %2$s</string>
-    <string name="eval_missing_permissions">The skill \"%1$s\" needs these permissions to work: %2$s</string>
-    <string name="eval_fatal_error">Could not evaluate your request</string>
-    <string name="eval_network_error">Network error</string>
-    <string name="eval_network_error_description">Dicio could not reach the internet. Please check your connection and retry.</string>
-    <string name="eval_no_match">I did not understand</string>
-    <string name="eval_no_match_repeat">Could you repeat?</string>
-    <string name="stt_say_something">Say something…</string>
-    <string name="stt_did_not_understand">I could not understand, try again</string>
-    <string name="stt_popup">Speech to text popup</string>
-    <string name="skill_name_search">Search</string>
-    <string name="skill_sentence_example_search">Search how to feed a cat</string>
-    <string name="skill_name_weather">Weather</string>
-    <string name="skill_sentence_example_weather">What\'s the weather like in Rome?</string>
-    <string name="skill_name_lyrics">Song lyrics</string>
-    <string name="skill_sentence_example_lyrics">What\'s the song that goes we will we will rock you?</string>
-    <string name="skill_name_open">App opener</string>
-    <string name="skill_sentence_example_open">Open NewPipe</string>
-    <string name="skill_name_media">Media control</string>
-    <string name="skill_sentence_example_media">Next song</string>
-    <string name="skill_name_joke">Joke</string>
-    <string name="skill_sentence_example_joke">Tell me a joke</string>
-    <string name="skill_name_calculator">Calculator</string>
-    <string name="skill_sentence_example_calculator">What is five times four minus a million?</string>
-    <string name="skill_name_navigation">Navigation</string>
-    <string name="skill_sentence_example_navigation">Navigate to Vancouver international airport</string>
-    <string name="skill_navigation_specify_where">Specify where you want to navigate to</string>
-    <string name="skill_navigation_navigating_to">Navigating to %1$s</string>
-    <string name="skill_name_telephone">Telephone</string>
-    <string name="skill_sentence_example_telephone">Call Tom</string>
-    <string name="skill_name_timer">Timer</string>
-    <string name="skill_sentence_example_timer">Set a timer for five minutes</string>
-    <string name="skill_name_current_time">Current time</string>
-    <string name="skill_sentence_example_current_time">What time is it?</string>
-    <string name="skill_fallback_name_text">Text message</string>
-    <string name="skill_search_here_is_what_i_found">Here is what I found</string>
-    <string name="skill_search_no_results">The search returned no results, try telling me again what you want to search for</string>
-    <string name="skill_search_no_results_stop">The search returned no results</string>
-    <string name="skill_search_what_question">What do you want to search for?</string>
-    <string name="skill_weather_could_not_find_city">Could not find city %1$s</string>
-    <string name="skill_weather_in_city_there_is_description">There is %2$s and %3$s degrees in %1$s right now</string>
+    <string name="eval_missing_permissions">\"%1$s\" becerisinin çalışması için şu izinlere ihtiyacı var: %2$s</string>
+    <string name="eval_fatal_error">İsteğini değerlendiremedim</string>
+    <string name="eval_network_error">Ağ hatası</string>
+    <string name="eval_network_error_description">Maku internete bağlanamadı. Lütfen bağlantını kontrol et ve tekrar dene.</string>
+    <string name="eval_no_match">Anlamadım patron</string>
+    <string name="eval_no_match_repeat">Tekrar eder misin?</string>
+    
+    <!-- KONUŞMA METİN -->
+    <string name="stt_say_something">Bir şey söyle patron…</string>
+    <string name="stt_did_not_understand">Anlayamadım, tekrar dene</string>
+    <string name="stt_popup">Konuşma metne açılır penceresi</string>
+    
+    <!-- BECERİLER -->
+    <string name="skill_name_search">Arama</string>
+    <string name="skill_sentence_example_search">Kediye nasıl yemek verilir diye ara</string>
+    
+    <string name="skill_name_weather">Hava durumu</string>
+    <string name="skill_sentence_example_weather">İstanbul\'da hava nasıl?</string>
+    
+    <string name="skill_name_lyrics">Şarkı sözleri</string>
+    <string name="skill_sentence_example_lyrics">We will we will rock you diye giden şarkı ne?</string>
+    
+    <string name="skill_name_open">Uygulama açıcı</string>
+    <string name="skill_sentence_example_open">YouTube\'u aç</string>
+    
+    <string name="skill_name_media">Medya kontrolü</string>
+    <string name="skill_sentence_example_media">Sonraki şarkı</string>
+    
+    <string name="skill_name_joke">Fıkra</string>
+    <string name="skill_sentence_example_joke">Bana bir fıkra anlat</string>
+    
+    <string name="skill_name_calculator">Hesap makinesi</string>
+    <string name="skill_sentence_example_calculator">Beş kere dört eksi bir milyon kaç?</string>
+    
+    <string name="skill_name_navigation">Navigasyon</string>
+    <string name="skill_sentence_example_navigation">İstanbul Havalimanı\'na navigasyon başlat</string>
+    <string name="skill_navigation_specify_where">Nereye navigasyon başlatmak istediğini belirt</string>
+    <string name="skill_navigation_navigating_to">%1$s konumuna navigasyon başlatılıyor</string>
+    
+    <string name="skill_name_telephone">Telefon</string>
+    <string name="skill_sentence_example_telephone">Ahmet\'i ara</string>
+    
+    <string name="skill_name_timer">Zamanlayıcı</string>
+    <string name="skill_sentence_example_timer">Beş dakikalık zamanlayıcı kur</string>
+    
+    <string name="skill_name_current_time">Şu anki saat</string>
+    <string name="skill_sentence_example_current_time">Saat kaç?</string>
+    
+    <string name="skill_fallback_name_text">Metin mesajı</string>
+    
+    <!-- ARAMA BECERİSİ -->
+    <string name="skill_search_here_is_what_i_found">İşte bulduklarım patron</string>
+    <string name="skill_search_no_results">Arama sonuç vermedi, ne aramak istediğini tekrar söyle</string>
+    <string name="skill_search_no_results_stop">Arama sonuç vermedi</string>
+    <string name="skill_search_what_question">Ne aramak istiyorsun?</string>
+    
+    <!-- HAVA DURUMU -->
+    <string name="skill_weather_could_not_find_city">%1$s şehrini bulamadım</string>
+    <string name="skill_weather_in_city_there_is_description">%1$s\'da şu anda %2$s ve %3$s derece var</string>
     <string name="skill_weather_description_temperature">%1$s · %2$.1f%3$s</string>
-    <string name="skill_weather_min_max_wind">Minimum temperature: %1$.1f%4$s\nMaximum temperature: %2$.1f%4$s\nWind speed: %3$.1f%5$s</string>
-    <string name="skill_lyrics_song_not_found">Unable to find song %1$s</string>
-    <string name="skill_lyrics_found_song_by_artist">Found %1$s by %2$s</string>
-    <string name="skill_open_could_not_understand">Could not understand app</string>
-    <string name="skill_open_unknown_app">Unknown app %1$s</string>
-    <string name="skill_open_opening">Opening %1$s…</string>
-    <string name="skill_media_playing">Playing media…</string>
-    <string name="skill_media_pausing">Pausing media…</string>
-    <string name="skill_media_previous">Previous media…</string>
-    <string name="skill_media_next">Next media…</string>
-    <string name="skill_media_no_media_session">No media session is active</string>
-    <string name="skill_calculator_could_not_calculate">I could not calculate your request</string>
-    <string name="skill_telephone_unknown_contact">No contact found, try again</string>
-    <string name="skill_telephone_found_contacts">I found %1$d contacts, which one shall I call?</string>
-    <string name="skill_telephone_confirm_call">Should I call %1$s?</string>
-    <string name="skill_telephone_calling">Calling %1$s…</string>
-    <string name="skill_telephone_not_calling">OK, I am not calling anyone</string>
-    <string name="skill_time_current_time">Right now, it is %1$s</string>
-    <string name="skill_timer_how_much_time">How much time should the timer last?</string>
-    <string name="skill_timer_confirm_cancel">Are you sure you want to cancel all timers?</string>
-    <string name="skill_timer_expired">The timer has expired!</string>
-    <string name="skill_timer_expired_name">Timer %1$s has expired!</string>
-    <string name="skill_timer_set">OK, the timer will expire in %1$s</string>
-    <string name="skill_timer_set_name">OK, timer %1$s will expire in %2$s</string>
-    <string name="skill_timer_canceled">The timer was canceled</string>
-    <string name="skill_timer_all_canceled">All timers were canceled</string>
-    <string name="skill_timer_canceled_name">Timer %1$s was canceled</string>
-    <string name="skill_timer_no_active">There is no active timer</string>
-    <string name="skill_timer_no_active_name">There is no active timer named %1$s</string>
-    <string name="skill_timer_query">The timer expires in %1$s</string>
-    <string name="skill_timer_query_name">Timer %1$s expires in %2$s</string>
-    <string name="skill_timer_query_last">The last timer expires in %1$s</string>
-    <string name="skill_timer_none_canceled">OK, no timer was canceled</string>
-    <string name="stt_service_label">Dicio offline speech recognition</string>
-    <string name="wake_service_label">Dicio wake word service</string>
-    <string name="wake_service_foreground_notification_summary">This notification allows the Dicio
-        wake word service to listen to the microphone in the background</string>
-    <string name="wake_service_foreground_notification">Listening for the \"Hey Dicio\" wake-up word</string>
-    <string name="wake_custom_service_foreground_notification">Listening for custom wake-up word</string>
-    <string name="wake_service_start_notification">Tap to start Dicio wake word service</string>
-    <string name="wake_service_triggered_notification">Dicio wake word triggered, tap to open</string>
-    <string name="wake_service_start_notification_summary">In Android 11+ Dicio can\'t start the service without a manual interaction from the user.</string>
-    <string name="wake_service_triggered_notification_summary">In Android 10+ Dicio can\'t start when a wake word is detected without showing a notification.</string>
-    <string name="wake_word_setup_title">Setup wake word</string>
-    <string name="wake_word_setup_description">Dicio will wake up automatically whenever you say \"Hey Dicio\".
-        This works by starting a service that always listens in the background.
-        All speech processing happens locally, that\'s why you need to download the AI model in advance.</string>
-    <string name="wake_word_error_downloading">An unexpected error occurred while downloading</string>
-    <string name="wake_word_error_downloading_network">Dicio could not reach the internet. Please check your connection and retry.</string>
-    <string name="wake_word_error_loading">An unexpected error occurred while loading</string>
-    <string name="disable">Disable</string>
-    <string name="retry">Retry</string>
-    <string name="stop">Stop</string>
-    <string name="grant_permissions">Grant permissions</string>
-    <string name="skill_listening_already_listening">I am already listening for the wake word</string>
-    <string name="skill_listening_started_listening">OK, I\'ll listen for the wake word</string>
-    <string name="skill_listening_not_listening">I wasn\'t listening</string>
-    <string name="skill_listening_stop_listening">OK</string>
-    <string name="skill_listening_disabled">The wake word service is disabled in settings</string>
-    <string name="skill_name_listening">Control wake word listening</string>
-    <string name="skill_sentence_example_listening">Stop listening</string>
-    <string name="skill_translation_success">Translated to %1$s</string>
-    <string name="skill_translation_unknown_language">I don\'t recognize language %1$s</string>
-    <string name="skill_translation_unsupported_language">Language %1$s (%2$s) is not supported</string>
-    <string name="skill_translation_failed">Unable to translate your query into %1$s</string>
-    <string name="skill_translation_failed_no_query">I didn\'t understand, could you repeat what you want to translate?</string>
-    <string name="skill_translation_to">to</string>
-    <string name="skill_name_translation">Translate</string>
-    <string name="skill_sentence_example_translation">Translate Hola from Spanish to English</string>
-    <string name="pref_weather_temperature_unit">Temperature unit</string>
-    <string name="use_system_default">Use system default</string>
-    <string name="pref_weather_unit_system_instructions">Uses the unit configured in \"System settings > System > Languages &amp; input > Regional preferences\"</string>
-    <string name="pref_weather_temperature_unit_celsius">Celsius (°C)</string>
+    <string name="skill_weather_min_max_wind">Minimum sıcaklık: %1$.1f%4$s\nMaksimum sıcaklık: %2$.1f%4$s\nRüzgar hızı: %3$.1f%5$s</string>
+    
+    <!-- ŞARKI SÖZLERİ -->
+    <string name="skill_lyrics_song_not_found">%1$s şarkısını bulamadım</string>
+    <string name="skill_lyrics_found_song_by_artist">%2$s tarafından %1$s bulundu</string>
+    
+    <!-- UYGULAMA AÇMA -->
+    <string name="skill_open_could_not_understand">Uygulamayı anlayamadım</string>
+    <string name="skill_open_unknown_app">Bilinmeyen uygulama %1$s</string>
+    <string name="skill_open_opening">%1$s açılıyor…</string>
+    
+    <!-- MEDYA -->
+    <string name="skill_media_playing">Medya oynatılıyor…</string>
+    <string name="skill_media_pausing">Medya duraklatılıyor…</string>
+    <string name="skill_media_previous">Önceki medya…</string>
+    <string name="skill_media_next">Sonraki medya…</string>
+    <string name="skill_media_no_media_session">Aktif medya oturumu yok</string>
+    
+    <!-- HESAP MAKİNESİ -->
+    <string name="skill_calculator_could_not_calculate">Hesaplamayı yapamadım</string>
+    
+    <!-- TELEFON -->
+    <string name="skill_telephone_unknown_contact">Kişi bulunamadı, tekrar dene</string>
+    <string name="skill_telephone_found_contacts">%1$d kişi buldum, hangisini arayayım?</string>
+    <string name="skill_telephone_confirm_call">%1$s\'yi arayayım mı?</string>
+    <string name="skill_telephone_calling">%1$s aranıyor…</string>
+    <string name="skill_telephone_not_calling">Tamam, kimseyi aramıyorum</string>
+    
+    <!-- SAAT -->
+    <string name="skill_time_current_time">Şu anda saat %1$s</string>
+    
+    <!-- ZAMANLAYICI -->
+    <string name="skill_timer_how_much_time">Zamanlayıcı ne kadar sürmeli?</string>
+    <string name="skill_timer_confirm_cancel">Tüm zamanlayıcıları iptal etmek istediğinden emin misin?</string>
+    <string name="skill_timer_expired">Zamanlayıcı doldu!</string>
+    <string name="skill_timer_expired_name">%1$s zamanlayıcısı doldu!</string>
+    <string name="skill_timer_set">Tamam, zamanlayıcı %1$s içinde dolacak</string>
+    <string name="skill_timer_set_name">Tamam, %1$s zamanlayıcısı %2$s içinde dolacak</string>
+    <string name="skill_timer_canceled">Zamanlayıcı iptal edildi</string>
+    <string name="skill_timer_all_canceled">Tüm zamanlayıcılar iptal edildi</string>
+    <string name="skill_timer_canceled_name">%1$s zamanlayıcısı iptal edildi</string>
+    <string name="skill_timer_no_active">Aktif zamanlayıcı yok</string>
+    <string name="skill_timer_no_active_name">%1$s adında aktif zamanlayıcı yok</string>
+    <string name="skill_timer_query">Zamanlayıcı %1$s içinde dolacak</string>
+    <string name="skill_timer_query_name">%1$s zamanlayıcısı %2$s içinde dolacak</string>
+    <string name="skill_timer_query_last">Son zamanlayıcı %1$s içinde dolacak</string>
+    <string name="skill_timer_none_canceled">Tamam, hiçbir zamanlayıcı iptal edilmedi</string>
+    
+    <!-- SERVİS ETİKETLERİ -->
+    <string name="stt_service_label">Maku çevrimdışı konuşma tanıma</string>
+    <string name="wake_service_label">Maku uyanma kelimesi servisi</string>
+    <string name="wake_service_foreground_notification_summary">Bu bildirim, Maku uyanma kelimesi servisinin arka planda mikrofonu dinlemesine izin verir</string>
+    <string name="wake_service_foreground_notification">\"Maku\" uyanma kelimesi dinleniyor</string>
+    <string name="wake_custom_service_foreground_notification">Özel uyanma kelimesi dinleniyor</string>
+    <string name="wake_service_start_notification">Maku uyanma kelimesi servisini başlatmak için dokun</string>
+    <string name="wake_service_triggered_notification">Maku uyanma kelimesi tetiklendi, açmak için dokun</string>
+    <string name="wake_service_start_notification_summary">Android 11+\'de Maku, kullanıcıdan manuel bir etkileşim olmadan servisi başlatamaz.</string>
+    <string name="wake_service_triggered_notification_summary">Android 10+\'de Maku, bir uyanma kelimesi algılandığında bildirim göstermeden başlayamaz.</string>
+    
+    <!-- UYANMA KELİMESİ KURULUMU -->
+    <string name="wake_word_setup_title">Uyanma kelimesini ayarla</string>
+    <string name="wake_word_setup_description">Maku, \"Maku\" dediğinde otomatik olarak uyanacak. Bu, arka planda her zaman dinleyen bir servis başlatılarak çalışır. Tüm konuşma işleme yerel olarak gerçekleşir, bu yüzden AI modelini önceden indirmen gerekir.</string>
+    <string name="wake_word_error_downloading">İndirme sırasında beklenmeyen bir hata oluştu</string>
+    <string name="wake_word_error_downloading_network">Maku internete bağlanamadı. Lütfen bağlantını kontrol et ve tekrar dene.</string>
+    <string name="wake_word_error_loading">Yükleme sırasında beklenmeyen bir hata oluştu</string>
+    
+    <!-- KONTROL BUTONLARI -->
+    <string name="disable">Devre dışı bırak</string>
+    <string name="retry">Tekrar dene</string>
+    <string name="stop">Durdur</string>
+    <string name="grant_permissions">İzinleri ver</string>
+    
+    <!-- DİNLEME BECERİSİ -->
+    <string name="skill_listening_already_listening">Zaten uyanma kelimesini dinliyorum</string>
+    <string name="skill_listening_started_listening">Tamam, uyanma kelimesini dinleyeceğim</string>
+    <string name="skill_listening_not_listening">Dinlemiyordum</string>
+    <string name="skill_listening_stop_listening">Tamam</string>
+    <string name="skill_listening_disabled">Uyanma kelimesi servisi ayarlarda devre dışı</string>
+    <string name="skill_name_listening">Uyanma kelimesi dinlemeyi kontrol et</string>
+    <string name="skill_sentence_example_listening">Dinlemeyi durdur</string>
+    
+    <!-- ÇEVİRİ -->
+    <string name="skill_translation_success">%1$s diline çevrildi</string>
+    <string name="skill_translation_unknown_language">%1$s dilini tanımıyorum</string>
+    <string name="skill_translation_unsupported_language">%1$s (%2$s) dili desteklenmiyor</string>
+    <string name="skill_translation_failed">Sorgunu %1$s diline çeviremedim</string>
+    <string name="skill_translation_failed_no_query">Anlamadım, neyi çevirmek istediğini tekrar eder misin?</string>
+    <string name="skill_translation_to">şu dile</string>
+    <string name="skill_name_translation">Çevir</string>
+    <string name="skill_sentence_example_translation">Hola\'yı İspanyolcadan İngilizceye çevir</string>
+    
+    <!-- HAVA DURUMU BİRİMLERİ -->
+    <string name="pref_weather_temperature_unit">Sıcaklık birimi</string>
+    <string name="use_system_default">Sistem varsayılanını kullan</string>
+    <string name="pref_weather_unit_system_instructions">\"Sistem ayarları > Sistem > Diller ve giriş > Bölgesel tercihler\" içinde yapılandırılan birimi kullanır</string>
+    <string name="pref_weather_temperature_unit_celsius">Santigrat (°C)</string>
     <string name="pref_weather_temperature_unit_fahrenheit">Fahrenheit (°F)</string>
     <string name="pref_weather_temperature_unit_kelvin">Kelvin (K)</string>
-    <string name="pref_weather_length_unit">Length unit</string>
-    <string name="pref_weather_length_unit_metric">Metric</string>
-    <string name="pref_weather_length_unit_imperial">Imperial</string>
+    <string name="pref_weather_length_unit">Uzunluk birimi</string>
+    <string name="pref_weather_length_unit_metric">Metrik</string>
+    <string name="pref_weather_length_unit_imperial">İmparatorluk</string>
     <string name="skill_weather_celsius">°C</string>
     <string name="skill_weather_fahrenheit">°F</string>
     <string name="skill_weather_kelvin">K</string>
     <string name="skill_weather_meters_per_second">m/s</string>
     <string name="skill_weather_miles_per_hour">mph</string>
-    <string name="failed_to_copy">Failed to copy to clipboard</string>
-    <string name="skill_translation_auto">Auto</string>
-    <string name="skill_search_duckduckgo_recaptcha">DuckDuckGo did not provide results, asking for a Captcha to be solved</string>
-    <string name="skill_notify_message_no_app">The notification says %1$s.</string>
-    <string name="skill_notify_message_app">The %1$s notification says %2$s.</string>
+    
+    <!-- DİĞER -->
+    <string name="failed_to_copy">Panoya kopyalama başarısız</string>
+    <string name="skill_translation_auto">Otomatik</string>
+    <string name="skill_search_duckduckgo_recaptcha">DuckDuckGo sonuç vermedi, Captcha çözülmesini istiyor</string>
+    
+    <!-- BİLDİRİMLER -->
+    <string name="skill_notify_message_no_app">Bildirim %1$s diyor.</string>
+    <string name="skill_notify_message_app">%1$s bildirimi %2$s diyor.</string>
     <string name="skill_notify_messages_separator">, </string>
-    <string name="skill_sentence_example_notify">What\'s my notification?</string>
-    <string name="skill_name_notify">Notify</string>
-    <string name="skill_notify_failed">Couldn\'t connect the notification listener service</string>
-    <string name="skill_notify_no_notifications">You have no notifications</string>
-    <string name="perm_notification_listener">read all notifications</string>
-    <string name="skill_notify_handler_label">Notify skill in Dicio assistant</string>
-    <string name="skill_name_flashlight">Flashlight</string>
-    <string name="skill_sentence_example_flashlight">Turn on the flashlight</string>
-    <string name="skill_flashlight_turned_on">Flashlight turned on</string>
-    <string name="skill_flashlight_turned_off">Flashlight turned off</string>
-    <string name="skill_flashlight_error">Unable to control the flashlight</string>
-    <string name="about">About</string>
+    <string name="skill_sentence_example_notify">Bildirimim ne?</string>
+    <string name="skill_name_notify">Bildirim</string>
+    <string name="skill_notify_failed">Bildirim dinleyici servisine bağlanılamadı</string>
+    <string name="skill_notify_no_notifications">Hiç bildirimin yok</string>
+    <string name="perm_notification_listener">tüm bildirimleri oku</string>
+    <string name="skill_notify_handler_label">Maku asistanında Bildirim becerisi</string>
+    
+    <!-- EL FENERİ -->
+    <string name="skill_name_flashlight">El feneri</string>
+    <string name="skill_sentence_example_flashlight">El fenerini aç</string>
+    <string name="skill_flashlight_turned_on">El feneri açıldı</string>
+    <string name="skill_flashlight_turned_off">El feneri kapatıldı</string>
+    <string name="skill_flashlight_error">El feneri kontrol edilemiyor</string>
+    
+    <string name="accessibility_service_description">Maku\'nun telefonunu kontrol etmesi ve uygulamaları açması için erişilebilirlik servisi</string>
+
+    <!-- HAKKINDA -->
+    <string name="about">Hakkında</string>
     <string name="about_version">%1$s (%2$d)</string>
-    <string name="about_version_copy">Copy version info</string>
-    <string name="about_description">Multilanguage, local and libre voice assistant</string>
-    <string name="about_repository_title">Source code repository</string>
-    <string name="about_repository_description">Dicio is free and open source, licensed under GPLv3</string>
-    <string name="about_repository_link" translatable="false">https://github.com/Stypox/dicio-android</string>
-    <string name="about_issues_title">Found a bug?</string>
-    <string name="about_issues_description">Feel free to request new features or report broken things (remember to attach logs)</string>
-    <string name="about_issues_link" translatable="false">https://github.com/Stypox/dicio-android/issues</string>
-    <string name="about_contributing_title">Contributing</string>
-    <string name="about_contributing_description">Dicio is developed by volunteers around the world. You can help out too by contributing code improvements, translations and even new skills!</string>
-    <string name="about_contributing_link" translatable="false">https://github.com/Stypox/dicio-android#contributing</string>
-    <string name="about_privacy_title">Privacy policy</string>
-    <string name="about_privacy_description">Dicio connects to external services only when a skill is expected to do so, or to download machine learning models during setup. All speech processing is performed locally on-device, and most skills can be used offline.</string>
-    <string name="about_privacy_link" translatable="false">https://stypox.org/dicio-privacy-policy.html</string>
+    <string name="about_version_copy">Sürüm bilgisini kopyala</string>
+    <string name="about_description">Çok dilli, yerel ve özgür sesli asistan</string>
+    <string name="about_repository_title">Kaynak kodu deposu</string>
+    <string name="about_repository_description">Maku ücretsiz ve açık kaynaktır, GPLv3 altında lisanslanmıştır</string>
+    <string name="about_issues_title">Hata mı buldun?</string>
+    <string name="about_issues_description">Yeni özellikler talep etmek veya bozuk şeyleri raporlamakta özgürsün (günlükleri eklemeyi unutma)</string>
+    <string name="about_contributing_title">Katkıda bulunma</string>
+    <string name="about_contributing_description">Maku, dünya çapındaki gönüllüler tarafından geliştirilmektedir. Kod iyileştirmeleri, çeviriler ve hatta yeni becerilerle katkıda bulunarak sen de yardımcı olabilirsin!</string>
+    <string name="about_privacy_title">Gizlilik politikası</string>
+    <string name="about_privacy_description">Maku, harici hizmetlere yalnızca bir becerinin bunu yapması beklediğinde veya kurulum sırasında makine öğrenimi modellerini indirmek için bağlanır. Tüm konuşma işleme cihaz üzerinde yerel olarak gerçekleştirilir ve çoğu beceri çevrimdışı kullanılabilir.</string>
 </resources>

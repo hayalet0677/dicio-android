@@ -1,6 +1,17 @@
 <resources>
 
-    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- ANKA KUŞU TEMASI -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="android:textColorSecondary">@color/textSecondary</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">@color/colorBackground</item>
+    </style>
 
     <style name="SttPopupTheme">
         <item name="windowActionBar">false</item>
@@ -11,4 +22,5 @@
         <item name="android:windowAnimationStyle">@null</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
 </resources>

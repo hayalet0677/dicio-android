@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ANKA KUŞU RENK PALETİ -->
+    
+    <!-- Ana renkler - Ateş tonları -->
+    <color name="colorPrimary">#D84315</color>
+    <color name="colorPrimaryDark">#BF360C</color>
+    <color name="colorAccent">#FFB300</color>
+    
+    <!-- Arka plan renkleri -->
+    <color name="colorBackground">#261812</color>
+    <color name="colorSurface">#3E2723</color>
+    
+    <!-- Metin renkleri -->
+    <color name="textPrimary">#FFFFFF</color>
+    <color name="textSecondary">#FFB300</color>
+    <color name="textHint">#8D6E63</color>
+    
+    <!-- Durum renkler -->
+    <color name="colorSuccess">#4CAF50</color>
+    <color name="colorError">#F44336</color>
+    <color name="colorWarning">#FF9800</color>
+    
+    <!-- Anka Kuşu özel tonları -->
+    <color name="phoenixFire">#FF5722</color>
+    <color name="phoenixGold">#FFC107</color>
+    <color name="phoenixEmber">#FF6F00</color>
+    <color name="phoenixAsh">#424242</color>
+</resources>
